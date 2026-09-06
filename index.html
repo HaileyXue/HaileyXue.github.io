@@ -20,29 +20,43 @@
     <a class="site-name" href="#main">Hailey Xue</a>
     <nav aria-label="Main navigation">
       <a href="#projects">Projects</a>
-      <a href="#research">Research</a>
       <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
   <main id="main">
     <section class="intro" aria-labelledby="name">
-      <h1 id="name">Hailey Xue</h1>
-      <p class="role">Data Scientist <span>·</span> Applied AI</p>
-      <p>Applied AI, clinical NLP, and analytics.<br>Currently at Ghamut Corporation and UCLA Health.</p>
-      <p class="muted">Irvine, California</p>
+      <div class="intro-copy">
+      <p class="hello">Hi, I’m Hailey.</p>
+      <h1 id="name">Data scientist.<br><span>AI builder.</span></h1>
+
+      <p>I build AI tools, data pipelines, and interactive applications.<br>Currently at Ghamut Corporation and UCLA Health.</p>
+
       <div class="links">
         <a href="https://github.com/HaileyXue">GitHub</a>
         <a href="mailto:xuexd0211@g.ucla.edu">Email</a>
         <a class="resume-link" href="resume/resume_sum2026_AI_focused.pdf">AI resume <span aria-hidden="true">↗</span></a>
         <a class="resume-link secondary" href="resume/resume_sum2026_traditional_data_scientist.pdf">Data science resume <span aria-hidden="true">↗</span></a>
       </div>
+      </div>
+      <figure class="portrait">
+        <img src="assets/portrait-placeholder.svg" alt="Illustrated placeholder for Hailey’s personal photo" width="400" height="440">
+        <figcaption>Personal photo coming soon</figcaption>
+        <span class="location">Irvine, California</span>
+      </figure>
     </section>
 
     <section id="projects" aria-labelledby="projects-title">
       <h2 id="projects-title">Projects</h2>
       <div class="project-grid">
       <article>
+        <figure class="project-art outcomes" aria-label="Successful case outcomes increased from 46 percent to 73 percent">
+          <figcaption>Successful case outcomes</figcaption>
+          <div class="bar-row"><span>Before</span><div class="bar-track"><i style="width:46%"></i></div><b>46%</b></div>
+          <div class="bar-row"><span>After</span><div class="bar-track"><i style="width:73%"></i></div><b>73%</b></div>
+          <p class="chart-note">+27 percentage points</p>
+        </figure>
         <h3>AI decision support</h3>
         <p class="meta">Ghamut Corporation</p>
         <p>Document retrieval, summarization, and LLM-backed appeal drafting.
@@ -50,6 +64,12 @@
         <p class="tools">Python, RAG, LLMs, Kafka</p>
       </article>
       <article>
+        <figure class="project-art pipeline">
+          <figcaption>Clinical NLP workflow</figcaption>
+          <div class="pipeline-step"><span aria-hidden="true">▤</span><div><strong>14,000+ records</strong><small>Clean & tokenize</small></div></div>
+          <div class="connector" aria-hidden="true">↓</div>
+          <div class="pipeline-step"><span aria-hidden="true">◎</span><div><strong>3 NLP models</strong><small>Fine-tune & evaluate</small></div></div>
+        </figure>
         <h3>Clinical NLP</h3>
         <p class="meta">UCLA Health</p>
         <p>Processed 14,000+ clinical records and benchmarked three NLP models.
@@ -58,6 +78,10 @@
         <a href="#research">Related preprint</a>
       </article>
       <article>
+        <figure class="project-art dashboard">
+          <figcaption>Application concept</figcaption>
+          <div class="mini-app" aria-hidden="true"><div class="app-top"><i></i><i></i><i></i></div><div class="app-body"><div class="app-sidebar"><span></span><span></span><span></span></div><div class="app-main"><div class="app-filters"><i></i><i></i></div><svg viewBox="0 0 200 65"><path d="M0 55H200M0 30H200M0 5H200" stroke="#e9d9c8" fill="none"/><path d="M0 50L25 40L50 46L75 22L100 31L125 14L150 20L175 8L200 12" stroke="#b66a3e" stroke-width="3" fill="none"/></svg><div class="app-table"><span></span><span></span></div></div></div></div>
+        </figure>
         <h3>Clinical analytics application</h3>
         <p class="meta">Prenosis · Technical Lead</p>
         <p>An R Shiny application for filtering and exploring clinical records.
@@ -65,15 +89,6 @@
         <p class="tools">R Shiny, SQL, dplyr, ggplot2</p>
       </article>
       </div>
-    </section>
-
-    <section id="research" aria-labelledby="research-title">
-      <h2 id="research-title">Research</h2>
-      <article>
-        <h3><a href="https://www.medrxiv.org/content/10.64898/2026.08.20.26360921v1.full">Large-Scale Psychiatric Concept Extraction from Electronic Health Records: A Comparative Study of Encoder-Based Language Models</a></h3>
-        <p class="meta">medRxiv · August 2026 · Preprint, not peer reviewed</p>
-        <p>Published under Xiaodong Xue.</p>
-      </article>
     </section>
 
     <section id="experience" aria-labelledby="experience-title">
@@ -94,6 +109,15 @@
         <div><h3>Data Analytics Intern</h3><p>Himalaya Wellness Company</p></div>
         <p class="meta">Dec 2021 – May 2022</p>
       </div>
+    </section>
+
+    <section id="research" aria-labelledby="research-title">
+      <h2 id="research-title">Research</h2>
+      <article>
+        <h3><a href="https://www.medrxiv.org/content/10.64898/2026.08.20.26360921v1.full">Large-Scale Psychiatric Concept Extraction from Electronic Health Records: A Comparative Study of Encoder-Based Language Models</a></h3>
+        <p class="meta">medRxiv · August 2026 · Preprint, not peer reviewed</p>
+        <p>Published under Xiaodong Xue.</p>
+      </article>
     </section>
 
     <section aria-labelledby="education-title">

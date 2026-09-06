@@ -1,6 +1,6 @@
 # Hailey Xue — personal portfolio
 
-A responsive, static portfolio built with HTML and CSS. No build step or JavaScript dependencies. The layout uses muted project cards, restrained typography, and concise content. Project cards stack on smaller screens.
+A responsive, static portfolio built with HTML and CSS. No build step or JavaScript dependencies. The layout uses a personal photo placeholder, larger sans-serif typography, and visual project cards. Cards stack on smaller screens.
 
 ## Preview locally
 
@@ -18,6 +18,9 @@ Open http://localhost:8000. You can also open `index.html` directly.
 - `styles.css`: responsive layout, colors, and typography. Uses system fonts without external font requests.
 - `resume/`: the two supplied resume PDFs, linked for viewing and download.
 - `assets/favicon.svg`: site icon.
+- `assets/portrait-placeholder.svg`: illustrated photo placeholder. Replace its image path and alt text in `index.html` when a personal photo is available.
+
+The outcomes chart uses resume figures. The NLP diagram summarizes the workflow. The analytics preview is an illustrative application concept, not a product screenshot or measured dataset.
 
 Project metrics and experience are based on the supplied resumes. Research title and metadata are from https://www.medrxiv.org/content/10.64898/2026.08.20.26360921v1.full.
 

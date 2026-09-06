@@ -59,3 +59,73 @@ footer { padding: 23px 0; color: var(--muted); font-size: 11px; }
 .skip-link:focus { top: 10px; }
 @media (max-width: 800px) { body { padding: 0 28px; } .project-grid { grid-template-columns: 1fr; } .project-grid article { padding: 22px; } .project-grid article > p:not(.meta):not(.tools):not(.result) { margin-bottom: 12px; } .result { margin-top: 0; } }
 @media (max-width: 560px) { body { padding: 0 20px; } .site-header { align-items: flex-start; flex-direction: column; gap: 13px; padding: 20px 0; } nav { gap: 20px; } .intro { padding: 38px 0 32px 18px; } .intro::before { top: 42px; height: 60px; } .intro .links { gap: 12px 16px; } .entry { flex-direction: column; gap: 2px; } #research article { padding: 21px; } #research h3 { font-size: 19px; } #contact { align-items: flex-start; flex-direction: column; gap: 14px; } section { padding-block: 30px; } }
+
+/* Personal introduction and visual project summaries. */
+body { max-width: 1200px; font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; font-size: 17px; }
+.site-name { font-size: 22px; }
+nav { font-size: 15px; }
+h1, #research h3 { font-family: inherit; }
+h1 { font-size: clamp(44px, 5.5vw, 66px); font-weight: 650; letter-spacing: -2.5px; line-height: 1.1; }
+h1 span { color: #548264; }
+h2 { font-size: 28px; font-weight: 600; }
+h3 { font-size: 20px; }
+.intro { display: grid; grid-template-columns: 1.4fr 1fr; align-items: center; gap: 65px; padding: 48px 0; }
+.intro::before { display: none; }
+.hello { margin: 0 0 16px; font-size: 21px; font-weight: 500; }
+.intro-copy > p:not(.hello) { margin-top: 22px; color: var(--muted); font-size: 18px; line-height: 1.7; }
+.intro .links { font-size: 14px; gap: 14px 22px; }
+.resume-link { border-radius: 9px; }
+.portrait { position: relative; margin: 0 10px 12px 0; transform: rotate(2deg); }
+.portrait img { display: block; width: 100%; height: auto; max-height: 345px; object-fit: cover; border: 7px solid #fff; border-radius: 26px; box-shadow: 0 12px 32px #344c3410; }
+.portrait figcaption { position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 12px; background: #ffffffed; padding: 7px 13px; border-radius: 20px; color: #526c59; }
+.location { position: absolute; right: -18px; top: 28px; transform: rotate(-5deg); padding: 8px 14px; border: 1px solid #ead0a6; border-radius: 8px; background: #ffdfac; font-size: 13px; color: #694d28; }
+.project-grid { gap: 22px; }
+.project-grid article, .project-grid article:nth-child(2), .project-grid article:nth-child(3) { overflow: hidden; padding: 0 24px 24px; background: #fffefa; border: 1px solid #e1e5db; border-radius: 16px; }
+.project-grid article h3 { font-size: 20px; }
+.project-grid article > p:not(.meta):not(.tools):not(.result) { font-size: 15px; }
+.project-grid .meta { font-size: 13px; }
+.project-grid .tools { font-size: 12px; }
+.project-art { align-self: stretch; margin: 0 -24px 23px; padding: 23px; height: 225px; }
+.project-art figcaption { font-size: 12px; font-weight: 600; margin-bottom: 22px; color: #465c4c; }
+.outcomes { background: #e7efdf; }
+.bar-row { display: flex; align-items: center; gap: 10px; margin: 16px 0; font-size: 12px; }
+.bar-row > span { width: 39px; }
+.bar-row b { font-size: 14px; }
+.bar-track { flex: 1; height: 23px; background: #d4e1c9; border-radius: 5px; overflow: hidden; }
+.bar-track i { display: block; height: 100%; background: #99b785; border-radius: 5px; }
+.bar-row:nth-of-type(2) .bar-track i { background: #507a51; }
+.chart-note { display: inline-block; margin-top: 1px; padding: 4px 9px; background: #f7faf2; border-radius: 6px; font-size: 12px; color: #3e623f; }
+.pipeline { background: #eae7f5; }
+.pipeline figcaption { color: #63567c; margin-bottom: 12px; }
+.pipeline-step { display: flex; align-items: center; gap: 14px; padding: 9px 13px; border: 1px solid #ded5ec; border-radius: 10px; background: #faf8ff; }
+.pipeline-step > span { color: #83709d; font-size: 28px; line-height: 1; }
+.pipeline-step strong { display: block; font-size: 13px; font-weight: 600; }
+.pipeline-step small { display: block; font-size: 11px; color: #746783; }
+.connector { height: 21px; text-align: center; color: #8e7fa5; line-height: 21px; }
+.dashboard { background: #fae8d9; }
+.dashboard figcaption { color: #865b3f; margin-bottom: 17px; }
+.mini-app { background: #fffcf7; border: 1px solid #e4c7ae; border-radius: 9px; overflow: hidden; box-shadow: 4px 7px 0 #ddba991f; }
+.app-top { display: flex; gap: 4px; border-bottom: 1px solid #efddcc; padding: 9px; }
+.app-top i { height: 5px; width: 5px; border-radius: 50%; background: #d6bca4; }
+.app-body { display: flex; height: 120px; }
+.app-sidebar { width: 35px; background: #f6eee3; padding: 13px 8px; }
+.app-sidebar span { display: block; height: 4px; background: #dfc8af; margin-bottom: 11px; border-radius: 2px; }
+.app-main { flex: 1; min-width: 0; padding: 10px; }
+.app-main svg { display: block; width: 100%; height: 57px; }
+.app-filters { display: flex; gap: 6px; margin-bottom: 7px; }
+.app-filters i { height: 10px; width: 35px; border-radius: 3px; background: #efdbc6; }
+.app-table span { display: block; height: 3px; background: #eee2d4; margin-top: 5px; }
+.result strong { font-size: 24px; }
+.result span { font-size: 12px; }
+article > a { font-size: 14px; }
+#research h3 { font-size: 18px; font-weight: 550; }
+#research article { padding: 24px 28px; border-radius: 14px; }
+#research .meta, #research article > p:last-child { font-size: 13px; }
+.entry h3 { font-size: 17px; }
+.entry p { font-size: 15px; }
+.entry > .meta { font-size: 14px; }
+section[aria-labelledby="skills-title"] p { font-size: 15px; }
+#contact { padding: 28px; margin-top: 28px; background: #e8eedf; border-radius: 14px; border: 0; }
+#contact .links { font-size: 15px; }
+@media (max-width: 900px) { .intro { gap: 28px; } .project-grid { grid-template-columns: 1fr; } .project-art { height: 225px; } .outcomes .bar-row, .outcomes .chart-note { max-width: 400px; } .pipeline-step, .connector { max-width: 350px; } .mini-app { max-width: 370px; } }
+@media (max-width: 600px) { .intro { grid-template-columns: 1fr; gap: 32px; padding: 35px 0; } h1 { font-size: 46px; letter-spacing: -1.8px; } .intro-copy > p:not(.hello) { font-size: 17px; } .portrait { width: 80%; max-width: 310px; justify-self: center; } .portrait img { max-height: 300px; } nav { font-size: 14px; gap: 18px; } .intro .links { gap: 14px 18px; } h2 { font-size: 25px; } #contact { padding: 23px; } }
