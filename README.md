@@ -1,6 +1,6 @@
 # Hailey Xue — personal portfolio
 
-A responsive, static portfolio built with HTML and CSS. No build step or JavaScript dependencies. The single-column layout uses plain section headings and system fonts.
+A responsive, static portfolio built with HTML and CSS. No build step or JavaScript dependencies. The layout uses muted project cards, restrained typography, and concise content. Project cards stack on smaller screens.
 
 ## Preview locally
 

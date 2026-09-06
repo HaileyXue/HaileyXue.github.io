@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Hailey Xue — data scientist working across applied AI, clinical NLP, and analytics. Explore selected projects, research, and experience.">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#f7f6f2">
   <meta property="og:title" content="Hailey Xue — Data Scientist & Applied AI">
   <meta property="og:description" content="Selected projects, research, and experience in applied AI, clinical NLP, and analytics.">
   <meta property="og:type" content="website">
@@ -28,38 +28,43 @@
   <main id="main">
     <section class="intro" aria-labelledby="name">
       <h1 id="name">Hailey Xue</h1>
-      <p class="role">Data Scientist</p>
-      <p>I work on applied AI, clinical NLP, and data analytics. I’m currently a data scientist at Ghamut Corporation and a graduate researcher at UCLA Health.</p>
+      <p class="role">Data Scientist <span>·</span> Applied AI</p>
+      <p>Applied AI, clinical NLP, and analytics.<br>Currently at Ghamut Corporation and UCLA Health.</p>
       <p class="muted">Irvine, California</p>
       <div class="links">
         <a href="https://github.com/HaileyXue">GitHub</a>
         <a href="mailto:xuexd0211@g.ucla.edu">Email</a>
-        <a href="resume/resume_sum2026_AI_focused.pdf">AI resume (PDF)</a>
-        <a href="resume/resume_sum2026_traditional_data_scientist.pdf">Data science resume (PDF)</a>
+        <a class="resume-link" href="resume/resume_sum2026_AI_focused.pdf">AI resume <span aria-hidden="true">↗</span></a>
+        <a class="resume-link secondary" href="resume/resume_sum2026_traditional_data_scientist.pdf">Data science resume <span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
     <section id="projects" aria-labelledby="projects-title">
       <h2 id="projects-title">Projects</h2>
+      <div class="project-grid">
       <article>
-        <h3>AI document processing and decision support</h3>
+        <h3>AI decision support</h3>
         <p class="meta">Ghamut Corporation</p>
-        <p>Built document processing pipelines and backend APIs for evidence retrieval, document Q&amp;A, summarization, and multi-step appeal drafting. The workflow improved successful case outcomes from 46% to 73%.</p>
+        <p>Document retrieval, summarization, and LLM-backed appeal drafting.
+        </p><p class="result"><strong>46% → 73%</strong><span>successful case outcomes</span></p>
         <p class="tools">Python, RAG, LLMs, Kafka</p>
       </article>
       <article>
         <h3>Clinical NLP</h3>
         <p class="meta">UCLA Health</p>
-        <p>Built ETL pipelines for 14,000+ clinical records. Fine-tuned and benchmarked three NLP models across 110 clinical outcomes, achieving a macro-F1 of 0.83.</p>
+        <p>Processed 14,000+ clinical records and benchmarked three NLP models.
+        </p><p class="result"><strong>0.83 macro-F1</strong><span>across 110 clinical outcomes</span></p>
         <p class="tools">Python, PyTorch, Hugging Face, AWS S3</p>
         <a href="#research">Related preprint</a>
       </article>
       <article>
         <h3>Clinical analytics application</h3>
         <p class="meta">Prenosis · Technical Lead</p>
-        <p>Built an R Shiny application with global filters, timeline views, and clinical record visualizations. Standardized data modeling and preprocessing reduced application response times from minutes to seconds.</p>
+        <p>An R Shiny application for filtering and exploring clinical records.
+        </p><p class="result"><strong>Minutes → seconds</strong><span>application response time</span></p>
         <p class="tools">R Shiny, SQL, dplyr, ggplot2</p>
       </article>
+      </div>
     </section>
 
     <section id="research" aria-labelledby="research-title">
@@ -67,7 +72,7 @@
       <article>
         <h3><a href="https://www.medrxiv.org/content/10.64898/2026.08.20.26360921v1.full">Large-Scale Psychiatric Concept Extraction from Electronic Health Records: A Comparative Study of Encoder-Based Language Models</a></h3>
         <p class="meta">medRxiv · August 2026 · Preprint, not peer reviewed</p>
-        <p>Research on extracting psychiatric concepts from Spanish-language clinical notes using encoder-based language models. Published under Xiaodong Xue.</p>
+        <p>Published under Xiaodong Xue.</p>
       </article>
     </section>
 
