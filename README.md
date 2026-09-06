@@ -35,4 +35,10 @@ Project metrics and experience are based on the supplied resumes. Research title
 3. In **Settings → Pages**, choose **Deploy from a branch**, then `main` and `/ (root)`.
 4. Visit the deployment URL shown by GitHub after publication.
 
-All local asset paths are relative, so the site works at either the account root or a project subpath. `.nojekyll` allows the static files to be served without Jekyll processing. Hosting has not yet been configured.
+All local asset paths are relative, so the site works at either the account root or a project subpath. `.nojekyll` allows the static files to be served without Jekyll processing. GitHub Pages is configured to publish from `main` at the repository root.
+
+Live site: https://haileyxue.github.io/
+
+Repository: https://github.com/HaileyXue/HaileyXue.github.io
+
+Future updates go live automatically after committing and pushing to `main`.
