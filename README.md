@@ -1,6 +1,6 @@
 # Hailey Xue — personal portfolio
 
-A responsive, static portfolio built with HTML and CSS. No build step or JavaScript dependencies. Project stories expand using native HTML details elements.
+A responsive, static portfolio built with HTML and CSS. No build step or JavaScript dependencies. The single-column layout uses plain section headings and system fonts.
 
 ## Preview locally
 
@@ -15,11 +15,11 @@ Open http://localhost:8000. You can also open `index.html` directly.
 ## Content and design
 
 - `index.html`: introduction, three project stories, research, experience, skills, and contact.
-- `styles.css`: responsive layout, colors, and typography. Google Fonts are optional; system fonts provide fallbacks.
+- `styles.css`: responsive layout, colors, and typography. Uses system fonts without external font requests.
 - `resume/`: the two supplied resume PDFs, linked for viewing and download.
 - `assets/favicon.svg`: site icon.
 
-Project metrics and experience are based on the supplied resumes. Research title and metadata are from https://www.medrxiv.org/content/10.64898/2026.08.20.26360921v1.full. Project graphics are abstract illustrations, not screenshots of the applications.
+Project metrics and experience are based on the supplied resumes. Research title and metadata are from https://www.medrxiv.org/content/10.64898/2026.08.20.26360921v1.full.
 
 ## Before publishing
 
